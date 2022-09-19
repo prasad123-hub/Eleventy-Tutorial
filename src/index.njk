@@ -1,0 +1,48 @@
+---
+layout: base.njk
+section: home
+---
+
+{# Hero Section #}
+<div
+    class="flex items-center mt-10 pb-10 border-b">
+    {# Hero #}
+    <div class="w-1/2">
+        <h1 class="text-6xl font-bold leading-[60px]">{{ home.title }}</h1>
+        <div class="text-xl mt-4">{{ home.body }}</div>
+        <a href="/contact">
+            <button class="mt-6 bg-black text-white py-2 px-3 rounded-md">Contact Me</button>
+        </a>
+    </div>
+    <div class="w-1/2">
+        <img src="{{ home.image }}" width="1000px"/>
+    </div>
+</div>
+{# Projects Sections #}
+<div class="pb-10 border-b">
+    <h1 class="text-2xl font-semibold my-4">Projects</h1>
+    <div class="flex items-center space-x-4">
+        {% for project in projects %}
+            <div class="w-[400px] p-4 border rounded-md cursor-pointer">
+                <img src="{{ project.image }}"/>
+                <h1 class="mt-2 font-semibold">{{ project.title }}</h1>
+                <button class="bg-black text-white p-2 rounded-md mt-2">Demo</button>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{# Articles #}
+<div class="pb-10 border-b">
+    <h1 class="text-2xl font-semibold my-4">Articles</h1>
+    <div class="grid grid-cols-2 gap-10">
+        {% for article in articles %}
+            <div class="w-[400px] p-4 border rounded-md cursor-pointer">
+                <h1 class="mt-2 font-semibold">{{ article.title }}</h1>
+                <p class="mt-2">{{ article.desc }}</p>
+                <a href="{{ article.url }}">
+                    <button class="bg-black text-white p-2 rounded-md mt-2">Read</button>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Learn Javascript",
+    "url": "/posts/javascript",
+    "desc": "This is my first article on how to learn javascript"
+  },
+  {
+    "title": "Learn React",
+    "url": "/posts/react",
+    "desc": "This is my first article on how to learn ReactJs"
+  },
+  {
+    "title": "Learn Typescript",
+    "url": "/posts/typescript",
+    "desc": "This is my first article on how to learn Typescript"
+  },
+  {
+    "title": "Learn NodeJs",
+    "url": "/posts/node",
+    "desc": "This is my first article on how to learn NodeJs"
+  }
+]

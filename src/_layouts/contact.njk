@@ -1,0 +1,10 @@
+---
+layout: base.njk
+section: contact
+---
+
+<div>
+    <h1 class="text-xl font-semibold py-2">{{ title }}</h1>
+    <hr/> {{ content | safe }}
+    {% include "partials/form.njk" %}
+</div>

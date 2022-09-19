@@ -1,0 +1,13 @@
+---
+layout: base.njk
+section : page
+---
+
+<div class="">
+    <h1 class="text-2xl my-2">{{ title }}</h1>
+    <p>{{ subtitle }}</p>
+    <hr/>
+    <p class="text-xl my-4">
+        {{ content | safe }}
+    </p>
+</div>
